@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body
+{
+    background-color: #401F71;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box form
+{
+    position: relative;
+    padding: 40px;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #FDAF7B;
+    border-radius: 40px;
+}
+.box form h2
+{
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    color:#FDAF7B;
+    text-align: center;
+}
+.box form .inputBox
+{
+    margin: 30px 0;
+}
+.box form .inputBox label
+{
+    position: absolute;
+    left: 80px;
+    transition: 0.5s;
+    pointer-events: none;
+    color: #FDAF7B;
+}
+.box form .inputBox label[for=username]
+{
+    top: 128px;
+}
+.box form .inputBox label[for=password]
+{
+    top: 252px;
+}
+.box form .inputBox input
+{
+    height: 40px;
+    width: 300px;
+    padding: 30px 40px;
+    border-radius: 40px;
+    border: 2px solid #FDAF7B;
+    outline: none;
+    background: transparent;
+    font-size: 1em;
+    color: white;
+}
+.box form .inputBox input:valid~label,
+.box form .inputBox input:focus~label
+{
+    font-size: 0.80em;
+    color: white;
+    transform: translateY(-30px);
+    background-color: #401F71;
+    padding: 0 5px;
+}
+.box form .inputBox input:valid,
+.box form .inputBox input:focus
+{
+    border-color: white;
+}
+.box form .links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box form .links a
+{
+    color: #FDAF7B;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.box form .links a:hover
+{
+    color: white;
+}
+.box form .links a:active
+{
+    color: #FDAF7B;
+}
+.box form input[type=submit]
+{
+    background-color: transparent;
+    color: #FDAF7B;
+    border:1px solid #FDAF7B;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.box form input[type=submit]:hover
+{
+    background-color: #FDAF7B;
+    color: #401F71;
+}
+.box form input[type=submit]:active
+{
+    background-color: transparent;
+    color: #FDAF7B;
+    border:1px solid #FDAF7B;
+}
